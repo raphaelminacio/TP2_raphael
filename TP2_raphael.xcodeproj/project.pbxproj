@@ -14,6 +14,18 @@
 		281128031F8AA9AA000EFBA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281128011F8AA9AA000EFBA3 /* LaunchScreen.storyboard */; };
 		2811280E1F8AA9AA000EFBA3 /* TP2_raphaelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811280D1F8AA9AA000EFBA3 /* TP2_raphaelTests.swift */; };
 		281128191F8AA9AA000EFBA3 /* TP2_raphaelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281128181F8AA9AA000EFBA3 /* TP2_raphaelUITests.swift */; };
+		281128331F8AAABA000EFBA3 /* sheep.png in Resources */ = {isa = PBXBuildFile; fileRef = 281128271F8AAAB9000EFBA3 /* sheep.png */; };
+		281128341F8AAABA000EFBA3 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 281128281F8AAABA000EFBA3 /* dog.png */; };
+		281128351F8AAABA000EFBA3 /* refresh_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 281128291F8AAABA000EFBA3 /* refresh_button.png */; };
+		281128361F8AAABA000EFBA3 /* background_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811282A1F8AAABA000EFBA3 /* background_view.png */; };
+		281128371F8AAABA000EFBA3 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811282B1F8AAABA000EFBA3 /* cat.png */; };
+		281128381F8AAABA000EFBA3 /* cow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811282C1F8AAABA000EFBA3 /* cow.png */; };
+		281128391F8AAABA000EFBA3 /* appicon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 2811282D1F8AAABA000EFBA3 /* appicon.psd */; };
+		2811283A1F8AAABA000EFBA3 /* launch_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811282E1F8AAABA000EFBA3 /* launch_screen.png */; };
+		2811283B1F8AAABA000EFBA3 /* front_card.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811282F1F8AAABA000EFBA3 /* front_card.png */; };
+		2811283C1F8AAABA000EFBA3 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 281128301F8AAABA000EFBA3 /* appicon.png */; };
+		2811283D1F8AAABA000EFBA3 /* chick.png in Resources */ = {isa = PBXBuildFile; fileRef = 281128311F8AAABA000EFBA3 /* chick.png */; };
+		2811283E1F8AAABA000EFBA3 /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = 281128321F8AAABA000EFBA3 /* pig.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,18 @@
 		281128141F8AA9AA000EFBA3 /* TP2_raphaelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TP2_raphaelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		281128181F8AA9AA000EFBA3 /* TP2_raphaelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TP2_raphaelUITests.swift; sourceTree = "<group>"; };
 		2811281A1F8AA9AA000EFBA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281128271F8AAAB9000EFBA3 /* sheep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sheep.png; path = working/sheep.png; sourceTree = SOURCE_ROOT; };
+		281128281F8AAABA000EFBA3 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dog.png; path = working/dog.png; sourceTree = SOURCE_ROOT; };
+		281128291F8AAABA000EFBA3 /* refresh_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = refresh_button.png; path = working/refresh_button.png; sourceTree = SOURCE_ROOT; };
+		2811282A1F8AAABA000EFBA3 /* background_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background_view.png; path = working/background_view.png; sourceTree = SOURCE_ROOT; };
+		2811282B1F8AAABA000EFBA3 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cat.png; path = working/cat.png; sourceTree = SOURCE_ROOT; };
+		2811282C1F8AAABA000EFBA3 /* cow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cow.png; path = working/cow.png; sourceTree = SOURCE_ROOT; };
+		2811282D1F8AAABA000EFBA3 /* appicon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = appicon.psd; path = working/appicon.psd; sourceTree = SOURCE_ROOT; };
+		2811282E1F8AAABA000EFBA3 /* launch_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_screen.png; path = working/launch_screen.png; sourceTree = SOURCE_ROOT; };
+		2811282F1F8AAABA000EFBA3 /* front_card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = front_card.png; path = working/front_card.png; sourceTree = SOURCE_ROOT; };
+		281128301F8AAABA000EFBA3 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appicon.png; path = working/appicon.png; sourceTree = SOURCE_ROOT; };
+		281128311F8AAABA000EFBA3 /* chick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chick.png; path = working/chick.png; sourceTree = SOURCE_ROOT; };
+		281128321F8AAABA000EFBA3 /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pig.png; path = working/pig.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +121,7 @@
 		281127F71F8AA9AA000EFBA3 /* TP2_raphael */ = {
 			isa = PBXGroup;
 			children = (
+				281128261F8AAA5F000EFBA3 /* images */,
 				281127F81F8AA9AA000EFBA3 /* AppDelegate.swift */,
 				281127FA1F8AA9AA000EFBA3 /* ViewController.swift */,
 				281127FC1F8AA9AA000EFBA3 /* Main.storyboard */,
@@ -123,6 +148,25 @@
 				2811281A1F8AA9AA000EFBA3 /* Info.plist */,
 			);
 			path = TP2_raphaelUITests;
+			sourceTree = "<group>";
+		};
+		281128261F8AAA5F000EFBA3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				281128301F8AAABA000EFBA3 /* appicon.png */,
+				2811282D1F8AAABA000EFBA3 /* appicon.psd */,
+				2811282A1F8AAABA000EFBA3 /* background_view.png */,
+				2811282B1F8AAABA000EFBA3 /* cat.png */,
+				281128311F8AAABA000EFBA3 /* chick.png */,
+				2811282C1F8AAABA000EFBA3 /* cow.png */,
+				281128281F8AAABA000EFBA3 /* dog.png */,
+				2811282F1F8AAABA000EFBA3 /* front_card.png */,
+				2811282E1F8AAABA000EFBA3 /* launch_screen.png */,
+				281128321F8AAABA000EFBA3 /* pig.png */,
+				281128291F8AAABA000EFBA3 /* refresh_button.png */,
+				281128271F8AAAB9000EFBA3 /* sheep.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +276,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2811283E1F8AAABA000EFBA3 /* pig.png in Resources */,
+				281128361F8AAABA000EFBA3 /* background_view.png in Resources */,
+				2811283C1F8AAABA000EFBA3 /* appicon.png in Resources */,
 				281128031F8AA9AA000EFBA3 /* LaunchScreen.storyboard in Resources */,
+				281128371F8AAABA000EFBA3 /* cat.png in Resources */,
+				281128381F8AAABA000EFBA3 /* cow.png in Resources */,
+				281128341F8AAABA000EFBA3 /* dog.png in Resources */,
+				281128331F8AAABA000EFBA3 /* sheep.png in Resources */,
+				281128351F8AAABA000EFBA3 /* refresh_button.png in Resources */,
+				2811283D1F8AAABA000EFBA3 /* chick.png in Resources */,
+				2811283B1F8AAABA000EFBA3 /* front_card.png in Resources */,
+				2811283A1F8AAABA000EFBA3 /* launch_screen.png in Resources */,
 				281128001F8AA9AA000EFBA3 /* Assets.xcassets in Resources */,
+				281128391F8AAABA000EFBA3 /* appicon.psd in Resources */,
 				281127FE1F8AA9AA000EFBA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
