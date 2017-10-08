@@ -5,7 +5,8 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,386 +14,699 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TP2_raphael" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_view.png" translatesAutoresizingMaskIntoConstraints="NO" id="wNp-IC-dIF" userLabel="background">
-                                <rect key="frame" x="-1000" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VOO-NM-1a1" userLabel="card_2">
-                                <rect key="frame" x="-158" y="0.0" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kz-3p-CTh" userLabel="card_1">
+                                <rect key="frame" x="232" y="462.5" width="150" height="150"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNW-mc-9xs" userLabel="back">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wff-o4-FCK" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sde-D4-Yjf">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="zuJ-or-9YJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zuJ-or-9YJ" firstAttribute="leading" secondItem="wff-o4-FCK" secondAttribute="leading" id="QmB-eD-uE5"/>
+                                            <constraint firstAttribute="bottom" secondItem="zuJ-or-9YJ" secondAttribute="bottom" id="b2P-mC-rrd"/>
+                                            <constraint firstAttribute="trailing" secondItem="zuJ-or-9YJ" secondAttribute="trailing" id="qNH-Rr-ZjV"/>
+                                            <constraint firstItem="zuJ-or-9YJ" firstAttribute="top" secondItem="wff-o4-FCK" secondAttribute="top" id="t7E-Br-IfE"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9xQ-iq-PwT" userLabel="front">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9E-Ln-5Lw" userLabel="front">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="4ww-Op-U5T" userLabel="front">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="tCH-FE-Uy7" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjH-As-LDQ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msv-NB-6nz">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Msv-NB-6nz" secondAttribute="trailing" id="1yg-1b-eYf"/>
+                                            <constraint firstItem="tCH-FE-Uy7" firstAttribute="leading" secondItem="l9E-Ln-5Lw" secondAttribute="leading" id="FKw-VD-y13"/>
+                                            <constraint firstItem="tCH-FE-Uy7" firstAttribute="top" secondItem="l9E-Ln-5Lw" secondAttribute="top" id="FZK-0r-BoB"/>
+                                            <constraint firstItem="Msv-NB-6nz" firstAttribute="top" secondItem="l9E-Ln-5Lw" secondAttribute="top" id="MDC-ZK-g8A"/>
+                                            <constraint firstAttribute="bottom" secondItem="Msv-NB-6nz" secondAttribute="bottom" id="XJn-zc-4cu"/>
+                                            <constraint firstAttribute="trailing" secondItem="tCH-FE-Uy7" secondAttribute="trailing" id="cMC-KG-RId"/>
+                                            <constraint firstAttribute="bottom" secondItem="tCH-FE-Uy7" secondAttribute="bottom" id="ezE-ru-org"/>
+                                            <constraint firstItem="Msv-NB-6nz" firstAttribute="leading" secondItem="l9E-Ln-5Lw" secondAttribute="leading" id="gh5-YO-cyN"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="dZV-Dh-1RD"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wff-o4-FCK" secondAttribute="bottom" id="3R5-Qb-1nx"/>
+                                    <constraint firstAttribute="trailing" secondItem="l9E-Ln-5Lw" secondAttribute="trailing" id="SXP-dh-xBO"/>
+                                    <constraint firstAttribute="trailing" secondItem="wff-o4-FCK" secondAttribute="trailing" id="UtQ-cG-uzM"/>
+                                    <constraint firstAttribute="width" secondItem="4Kz-3p-CTh" secondAttribute="height" multiplier="1:1" id="Xyx-Ef-eRO"/>
+                                    <constraint firstItem="l9E-Ln-5Lw" firstAttribute="leading" secondItem="4Kz-3p-CTh" secondAttribute="leading" id="Ymv-ID-sSp"/>
+                                    <constraint firstAttribute="bottom" secondItem="l9E-Ln-5Lw" secondAttribute="bottom" id="gzt-DE-ZNg"/>
+                                    <constraint firstItem="l9E-Ln-5Lw" firstAttribute="top" secondItem="4Kz-3p-CTh" secondAttribute="top" id="xcn-57-TAH"/>
+                                    <constraint firstItem="wff-o4-FCK" firstAttribute="top" secondItem="4Kz-3p-CTh" secondAttribute="top" id="xhs-oy-V9S"/>
+                                    <constraint firstItem="wff-o4-FCK" firstAttribute="leading" secondItem="4Kz-3p-CTh" secondAttribute="leading" id="yGP-Xv-xSA"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GN2-Qq-w8u" userLabel="card_3">
-                                <rect key="frame" x="-316" y="0.0" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghP-q2-XUq" userLabel="card_2">
+                                <rect key="frame" x="74" y="462.5" width="150" height="150"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oBj-uo-JfV" userLabel="back">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3e-FD-0CA" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="LC3-d9-NOg">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="vT0-fT-OjU">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vT0-fT-OjU" firstAttribute="leading" secondItem="p3e-FD-0CA" secondAttribute="leading" id="5o9-oN-QSg"/>
+                                            <constraint firstItem="vT0-fT-OjU" firstAttribute="top" secondItem="p3e-FD-0CA" secondAttribute="top" id="Hfe-j7-mgt"/>
+                                            <constraint firstAttribute="bottom" secondItem="vT0-fT-OjU" secondAttribute="bottom" id="QKK-WT-pVb"/>
+                                            <constraint firstAttribute="trailing" secondItem="vT0-fT-OjU" secondAttribute="trailing" id="oRe-u6-8ez"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p3U-mN-R5V" userLabel="front">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-ZI-fyf" userLabel="front">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-8d-uZ1" userLabel="front">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="91h-Be-dNE" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqU-Vd-6qt">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odW-vx-vjP">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="odW-vx-vjP" secondAttribute="trailing" id="25u-hw-1hH"/>
+                                            <constraint firstAttribute="bottom" secondItem="91h-Be-dNE" secondAttribute="bottom" id="2VB-vv-mH3"/>
+                                            <constraint firstItem="odW-vx-vjP" firstAttribute="leading" secondItem="t5a-ZI-fyf" secondAttribute="leading" id="4Mk-BH-sWd"/>
+                                            <constraint firstItem="91h-Be-dNE" firstAttribute="top" secondItem="t5a-ZI-fyf" secondAttribute="top" id="6t2-E9-YKS"/>
+                                            <constraint firstAttribute="trailing" secondItem="91h-Be-dNE" secondAttribute="trailing" id="ClV-U1-C6j"/>
+                                            <constraint firstItem="odW-vx-vjP" firstAttribute="top" secondItem="t5a-ZI-fyf" secondAttribute="top" id="H24-vn-4jt"/>
+                                            <constraint firstItem="91h-Be-dNE" firstAttribute="leading" secondItem="t5a-ZI-fyf" secondAttribute="leading" id="MJc-ic-xyy"/>
+                                            <constraint firstAttribute="bottom" secondItem="odW-vx-vjP" secondAttribute="bottom" id="Qtu-Wj-nlK"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="GH4-ba-GcQ"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="t5a-ZI-fyf" secondAttribute="bottom" id="2mg-E8-csL"/>
+                                    <constraint firstAttribute="trailing" secondItem="t5a-ZI-fyf" secondAttribute="trailing" id="CFY-My-pWJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="p3e-FD-0CA" secondAttribute="bottom" id="ClX-ib-49n"/>
+                                    <constraint firstItem="t5a-ZI-fyf" firstAttribute="leading" secondItem="ghP-q2-XUq" secondAttribute="leading" id="G26-dJ-Lco"/>
+                                    <constraint firstItem="p3e-FD-0CA" firstAttribute="leading" secondItem="ghP-q2-XUq" secondAttribute="leading" id="Mwb-mc-f8w"/>
+                                    <constraint firstItem="t5a-ZI-fyf" firstAttribute="top" secondItem="ghP-q2-XUq" secondAttribute="top" id="mZd-3p-QY3"/>
+                                    <constraint firstItem="p3e-FD-0CA" firstAttribute="top" secondItem="ghP-q2-XUq" secondAttribute="top" id="nZO-9P-msf"/>
+                                    <constraint firstAttribute="trailing" secondItem="p3e-FD-0CA" secondAttribute="trailing" id="yFb-NU-2Nw"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Q1-u4-oDi" userLabel="card_4">
-                                <rect key="frame" x="-474" y="0.0" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfc-15-YLZ" userLabel="card_3">
+                                <rect key="frame" x="390" y="462.5" width="150.5" height="150"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1G-wL-47C" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hJ-iq-baf" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="im5-BL-PWg">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="yj9-fj-hfS">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="150"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="yj9-fj-hfS" secondAttribute="bottom" id="6fq-es-uMX"/>
+                                            <constraint firstAttribute="trailing" secondItem="yj9-fj-hfS" secondAttribute="trailing" id="Hlf-ym-s1d"/>
+                                            <constraint firstItem="yj9-fj-hfS" firstAttribute="top" secondItem="2hJ-iq-baf" secondAttribute="top" id="YIJ-e2-jhM"/>
+                                            <constraint firstItem="yj9-fj-hfS" firstAttribute="leading" secondItem="2hJ-iq-baf" secondAttribute="leading" id="s90-yX-0hv"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8yL-Cw-ppP" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-fw-RCH" userLabel="front">
+                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="BdK-eE-DPa" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="5h4-y0-aLn" userLabel="front">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="150"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diO-bC-y0d">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOB-Tj-BE5">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="150"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="MOB-Tj-BE5" secondAttribute="bottom" id="CRv-G3-Axd"/>
+                                            <constraint firstItem="5h4-y0-aLn" firstAttribute="top" secondItem="aKP-fw-RCH" secondAttribute="top" id="Sm9-1v-Npq"/>
+                                            <constraint firstItem="5h4-y0-aLn" firstAttribute="leading" secondItem="aKP-fw-RCH" secondAttribute="leading" id="ckY-Wu-dgE"/>
+                                            <constraint firstItem="MOB-Tj-BE5" firstAttribute="top" secondItem="aKP-fw-RCH" secondAttribute="top" id="cs0-YD-k1T"/>
+                                            <constraint firstAttribute="trailing" secondItem="5h4-y0-aLn" secondAttribute="trailing" id="cuJ-W3-Pb7"/>
+                                            <constraint firstAttribute="bottom" secondItem="5h4-y0-aLn" secondAttribute="bottom" id="niE-dh-WtV"/>
+                                            <constraint firstAttribute="trailing" secondItem="MOB-Tj-BE5" secondAttribute="trailing" id="u3z-ue-2Un"/>
+                                            <constraint firstItem="MOB-Tj-BE5" firstAttribute="leading" secondItem="aKP-fw-RCH" secondAttribute="leading" id="wMI-OB-oFm"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="Buz-xo-6rZ"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2hJ-iq-baf" secondAttribute="trailing" id="EaX-LJ-Zkc"/>
+                                    <constraint firstItem="aKP-fw-RCH" firstAttribute="leading" secondItem="pfc-15-YLZ" secondAttribute="leading" id="NOB-EN-3Le"/>
+                                    <constraint firstAttribute="trailing" secondItem="aKP-fw-RCH" secondAttribute="trailing" id="X58-rb-X1f"/>
+                                    <constraint firstItem="aKP-fw-RCH" firstAttribute="top" secondItem="pfc-15-YLZ" secondAttribute="top" id="fMo-L6-4Bp"/>
+                                    <constraint firstItem="2hJ-iq-baf" firstAttribute="top" secondItem="pfc-15-YLZ" secondAttribute="top" id="mTP-OS-86v"/>
+                                    <constraint firstItem="2hJ-iq-baf" firstAttribute="leading" secondItem="pfc-15-YLZ" secondAttribute="leading" id="uMj-l8-lia"/>
+                                    <constraint firstAttribute="bottom" secondItem="2hJ-iq-baf" secondAttribute="bottom" id="xGm-jO-ZTT"/>
+                                    <constraint firstAttribute="bottom" secondItem="aKP-fw-RCH" secondAttribute="bottom" id="yWl-Zz-slk"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0VJ-uc-YUX" userLabel="card_5">
-                                <rect key="frame" x="0.0" y="-158" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPl-Zd-4Ow" userLabel="card_4">
+                                <rect key="frame" x="548.5" y="462.5" width="150" height="150"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aol-2b-2pH" userLabel="back">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIK-q7-XR6" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="2ip-kI-QS3">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="olx-dG-RDk">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="olx-dG-RDk" secondAttribute="bottom" id="FUK-P8-VfS"/>
+                                            <constraint firstAttribute="trailing" secondItem="olx-dG-RDk" secondAttribute="trailing" id="LuE-rS-i7I"/>
+                                            <constraint firstItem="olx-dG-RDk" firstAttribute="leading" secondItem="vIK-q7-XR6" secondAttribute="leading" id="X6t-UT-TqC"/>
+                                            <constraint firstItem="olx-dG-RDk" firstAttribute="top" secondItem="vIK-q7-XR6" secondAttribute="top" id="z8U-4U-wQt"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zIZ-dh-aNT" userLabel="front">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WP1-gE-JJn" userLabel="front">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="9pX-t7-2Gw" userLabel="front">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="Irs-Il-kjR" userLabel="front">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjL-J2-d5G">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfD-xg-e1d">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="TfD-xg-e1d" secondAttribute="bottom" id="5gQ-ij-g6e"/>
+                                            <constraint firstItem="TfD-xg-e1d" firstAttribute="top" secondItem="WP1-gE-JJn" secondAttribute="top" id="R2t-pN-Z28"/>
+                                            <constraint firstItem="TfD-xg-e1d" firstAttribute="leading" secondItem="WP1-gE-JJn" secondAttribute="leading" id="VNT-NU-WEf"/>
+                                            <constraint firstItem="Irs-Il-kjR" firstAttribute="top" secondItem="WP1-gE-JJn" secondAttribute="top" id="ddT-jj-WZw"/>
+                                            <constraint firstAttribute="bottom" secondItem="Irs-Il-kjR" secondAttribute="bottom" id="gkf-uD-6FB"/>
+                                            <constraint firstAttribute="trailing" secondItem="TfD-xg-e1d" secondAttribute="trailing" id="iJQ-ZR-v5P"/>
+                                            <constraint firstItem="Irs-Il-kjR" firstAttribute="leading" secondItem="WP1-gE-JJn" secondAttribute="leading" id="pOP-yt-bfb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Irs-Il-kjR" secondAttribute="trailing" id="pax-tO-UDO"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WP1-gE-JJn" secondAttribute="bottom" id="AWp-WC-VXv"/>
+                                    <constraint firstAttribute="trailing" secondItem="vIK-q7-XR6" secondAttribute="trailing" id="Plp-n1-vZq"/>
+                                    <constraint firstAttribute="bottom" secondItem="vIK-q7-XR6" secondAttribute="bottom" id="ZYK-h1-edC"/>
+                                    <constraint firstItem="vIK-q7-XR6" firstAttribute="top" secondItem="kPl-Zd-4Ow" secondAttribute="top" id="fQE-Ca-4eS"/>
+                                    <constraint firstItem="vIK-q7-XR6" firstAttribute="leading" secondItem="kPl-Zd-4Ow" secondAttribute="leading" id="g9b-dz-fRP"/>
+                                    <constraint firstItem="WP1-gE-JJn" firstAttribute="leading" secondItem="kPl-Zd-4Ow" secondAttribute="leading" id="kJK-hc-B6U"/>
+                                    <constraint firstAttribute="trailing" secondItem="WP1-gE-JJn" secondAttribute="trailing" id="wkc-0t-BWP"/>
+                                    <constraint firstItem="WP1-gE-JJn" firstAttribute="top" secondItem="kPl-Zd-4Ow" secondAttribute="top" id="z8l-mk-Itj"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcB-ST-t1I" userLabel="card_6">
-                                <rect key="frame" x="-158" y="158" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ogg-Cl-kF1" userLabel="card_5">
+                                <rect key="frame" x="74" y="304" width="150" height="150.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQo-kg-ifp" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3kz-Ma-7PF" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="cAh-mE-f03">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-rB-dD1">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="MUp-rB-dD1" secondAttribute="trailing" id="UnE-Fn-Qeq"/>
+                                            <constraint firstAttribute="bottom" secondItem="MUp-rB-dD1" secondAttribute="bottom" id="Wef-tp-0zf"/>
+                                            <constraint firstItem="MUp-rB-dD1" firstAttribute="top" secondItem="3kz-Ma-7PF" secondAttribute="top" id="o3A-VU-Xkk"/>
+                                            <constraint firstItem="MUp-rB-dD1" firstAttribute="leading" secondItem="3kz-Ma-7PF" secondAttribute="leading" id="xb3-I9-AXD"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfa-tX-DaH" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQ1-yr-Pxo" userLabel="front">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="8m2-JA-xKQ" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="wcV-Q9-umb" userLabel="front">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLp-xz-bSi">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flc-yn-TwE">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="flc-yn-TwE" firstAttribute="top" secondItem="eQ1-yr-Pxo" secondAttribute="top" id="2TO-MN-hFX"/>
+                                            <constraint firstAttribute="bottom" secondItem="flc-yn-TwE" secondAttribute="bottom" id="30i-FK-lga"/>
+                                            <constraint firstAttribute="trailing" secondItem="flc-yn-TwE" secondAttribute="trailing" id="M5J-tf-QD5"/>
+                                            <constraint firstItem="wcV-Q9-umb" firstAttribute="leading" secondItem="eQ1-yr-Pxo" secondAttribute="leading" id="V83-un-nPa"/>
+                                            <constraint firstItem="flc-yn-TwE" firstAttribute="leading" secondItem="eQ1-yr-Pxo" secondAttribute="leading" id="VnG-vD-Hpj"/>
+                                            <constraint firstAttribute="bottom" secondItem="wcV-Q9-umb" secondAttribute="bottom" id="eIS-F9-fYg"/>
+                                            <constraint firstAttribute="trailing" secondItem="wcV-Q9-umb" secondAttribute="trailing" id="fY7-Pg-3Iu"/>
+                                            <constraint firstItem="wcV-Q9-umb" firstAttribute="top" secondItem="eQ1-yr-Pxo" secondAttribute="top" id="uRj-bv-hgs"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="qkS-o4-jGd"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3kz-Ma-7PF" secondAttribute="trailing" id="AjF-hb-XAP"/>
+                                    <constraint firstItem="3kz-Ma-7PF" firstAttribute="leading" secondItem="Ogg-Cl-kF1" secondAttribute="leading" id="IyA-ZF-lcW"/>
+                                    <constraint firstAttribute="bottom" secondItem="3kz-Ma-7PF" secondAttribute="bottom" id="K83-Ck-YyR"/>
+                                    <constraint firstItem="eQ1-yr-Pxo" firstAttribute="top" secondItem="Ogg-Cl-kF1" secondAttribute="top" id="MLt-tD-SMW"/>
+                                    <constraint firstItem="eQ1-yr-Pxo" firstAttribute="leading" secondItem="Ogg-Cl-kF1" secondAttribute="leading" id="ZCQ-fp-6Pe"/>
+                                    <constraint firstItem="3kz-Ma-7PF" firstAttribute="top" secondItem="Ogg-Cl-kF1" secondAttribute="top" id="cpV-tD-70k"/>
+                                    <constraint firstAttribute="bottom" secondItem="eQ1-yr-Pxo" secondAttribute="bottom" id="lUX-f8-QNo"/>
+                                    <constraint firstAttribute="trailing" secondItem="eQ1-yr-Pxo" secondAttribute="trailing" id="rIx-47-ckB"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V1K-jG-336" userLabel="card_7">
-                                <rect key="frame" x="-316" y="158" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5x-Xg-6pw" userLabel="card_6">
+                                <rect key="frame" x="232" y="304" width="150" height="150.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sjl-e2-47A" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbm-kd-pQa" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="JIB-Nh-edk">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="FDS-FN-UZk">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FDS-FN-UZk" firstAttribute="top" secondItem="wbm-kd-pQa" secondAttribute="top" id="8Ot-h2-A5O"/>
+                                            <constraint firstAttribute="trailing" secondItem="FDS-FN-UZk" secondAttribute="trailing" id="Ddc-4n-J8C"/>
+                                            <constraint firstAttribute="bottom" secondItem="FDS-FN-UZk" secondAttribute="bottom" id="RVB-Tf-5fC"/>
+                                            <constraint firstItem="FDS-FN-UZk" firstAttribute="leading" secondItem="wbm-kd-pQa" secondAttribute="leading" id="gYq-uA-r4N"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6tN-Eh-oct" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TU4-jk-BkC" userLabel="front">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="xrl-qm-xNA" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysF-Zs-TdX" userLabel="front">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfd-Sz-HzE">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0C-8e-UXL">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="X0C-8e-UXL" firstAttribute="top" secondItem="TU4-jk-BkC" secondAttribute="top" id="Lu6-0J-Cta"/>
+                                            <constraint firstAttribute="bottom" secondItem="X0C-8e-UXL" secondAttribute="bottom" id="UV3-eq-Pjn"/>
+                                            <constraint firstAttribute="trailing" secondItem="X0C-8e-UXL" secondAttribute="trailing" id="XQV-mX-HGp"/>
+                                            <constraint firstAttribute="bottom" secondItem="ysF-Zs-TdX" secondAttribute="bottom" id="Z2n-1a-5E5"/>
+                                            <constraint firstAttribute="trailing" secondItem="ysF-Zs-TdX" secondAttribute="trailing" id="ZEI-uq-ZLd"/>
+                                            <constraint firstItem="X0C-8e-UXL" firstAttribute="leading" secondItem="TU4-jk-BkC" secondAttribute="leading" id="nb6-36-SnC"/>
+                                            <constraint firstItem="ysF-Zs-TdX" firstAttribute="top" secondItem="TU4-jk-BkC" secondAttribute="top" id="tfS-g6-AeQ"/>
+                                            <constraint firstItem="ysF-Zs-TdX" firstAttribute="leading" secondItem="TU4-jk-BkC" secondAttribute="leading" id="ueB-3F-yb9"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="eOd-Rx-idw"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wbm-kd-pQa" secondAttribute="trailing" id="02E-4C-NTI"/>
+                                    <constraint firstAttribute="trailing" secondItem="TU4-jk-BkC" secondAttribute="trailing" id="Cm1-QG-bR5"/>
+                                    <constraint firstItem="TU4-jk-BkC" firstAttribute="leading" secondItem="Z5x-Xg-6pw" secondAttribute="leading" id="Efh-S4-b8K"/>
+                                    <constraint firstItem="wbm-kd-pQa" firstAttribute="leading" secondItem="Z5x-Xg-6pw" secondAttribute="leading" id="Jyy-Qt-WVS"/>
+                                    <constraint firstItem="wbm-kd-pQa" firstAttribute="top" secondItem="Z5x-Xg-6pw" secondAttribute="top" id="Qef-ZM-Bvv"/>
+                                    <constraint firstItem="TU4-jk-BkC" firstAttribute="top" secondItem="Z5x-Xg-6pw" secondAttribute="top" id="bu2-ff-Po5"/>
+                                    <constraint firstAttribute="bottom" secondItem="wbm-kd-pQa" secondAttribute="bottom" id="sJu-xH-qKJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="TU4-jk-BkC" secondAttribute="bottom" id="wcB-fA-hRV"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRX-z1-C55" userLabel="card_8">
-                                <rect key="frame" x="-474" y="158" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arf-IQ-bsc" userLabel="card_7">
+                                <rect key="frame" x="390" y="304" width="150.5" height="150.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S7X-IE-Onv" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sv5-JM-pLu" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="sLJ-ts-LfR">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="E6K-6j-PCT">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="150.5"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="E6K-6j-PCT" secondAttribute="bottom" id="4Mu-53-bGF"/>
+                                            <constraint firstItem="E6K-6j-PCT" firstAttribute="leading" secondItem="Sv5-JM-pLu" secondAttribute="leading" id="Pjm-My-siL"/>
+                                            <constraint firstAttribute="trailing" secondItem="E6K-6j-PCT" secondAttribute="trailing" id="Tzq-6p-cp0"/>
+                                            <constraint firstItem="E6K-6j-PCT" firstAttribute="top" secondItem="Sv5-JM-pLu" secondAttribute="top" id="XFi-7f-Ko4"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMX-on-LSe" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9O-1b-fs9" userLabel="front">
+                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="iHP-tS-9hP" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="usF-At-Rpm" userLabel="front">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="150.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHO-6W-6Cp">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVE-Ws-xu6">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="150.5"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="qVE-Ws-xu6" secondAttribute="bottom" id="1hn-jl-nuc"/>
+                                            <constraint firstAttribute="trailing" secondItem="usF-At-Rpm" secondAttribute="trailing" id="8PK-JD-nFL"/>
+                                            <constraint firstItem="usF-At-Rpm" firstAttribute="leading" secondItem="D9O-1b-fs9" secondAttribute="leading" id="AkJ-je-d1b"/>
+                                            <constraint firstAttribute="trailing" secondItem="qVE-Ws-xu6" secondAttribute="trailing" id="FrU-RX-mde"/>
+                                            <constraint firstAttribute="bottom" secondItem="usF-At-Rpm" secondAttribute="bottom" id="Tf4-tQ-an9"/>
+                                            <constraint firstItem="qVE-Ws-xu6" firstAttribute="leading" secondItem="D9O-1b-fs9" secondAttribute="leading" id="UJy-oX-yPr"/>
+                                            <constraint firstItem="usF-At-Rpm" firstAttribute="top" secondItem="D9O-1b-fs9" secondAttribute="top" id="iSy-Kd-0IU"/>
+                                            <constraint firstItem="qVE-Ws-xu6" firstAttribute="top" secondItem="D9O-1b-fs9" secondAttribute="top" id="nQ2-G8-IXn"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="o9r-0i-INn"/>
+                                <constraints>
+                                    <constraint firstItem="D9O-1b-fs9" firstAttribute="top" secondItem="arf-IQ-bsc" secondAttribute="top" id="52g-tI-Q78"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sv5-JM-pLu" secondAttribute="bottom" id="BCA-AJ-Nij"/>
+                                    <constraint firstAttribute="trailing" secondItem="D9O-1b-fs9" secondAttribute="trailing" id="Cvf-2k-Df9"/>
+                                    <constraint firstItem="Sv5-JM-pLu" firstAttribute="leading" secondItem="arf-IQ-bsc" secondAttribute="leading" id="Cyd-bY-wPJ"/>
+                                    <constraint firstItem="Sv5-JM-pLu" firstAttribute="top" secondItem="arf-IQ-bsc" secondAttribute="top" id="alA-Um-jVf"/>
+                                    <constraint firstItem="D9O-1b-fs9" firstAttribute="leading" secondItem="arf-IQ-bsc" secondAttribute="leading" id="emp-29-4Xv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sv5-JM-pLu" secondAttribute="trailing" id="pHh-zd-Jjy"/>
+                                    <constraint firstAttribute="bottom" secondItem="D9O-1b-fs9" secondAttribute="bottom" id="z8H-AN-us2"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Ab-BD-uXM" userLabel="card_9">
-                                <rect key="frame" x="0.0" y="-316" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHf-UL-4ky" userLabel="card_8">
+                                <rect key="frame" x="548.5" y="304" width="150" height="150.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FWU-vm-U5j" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAn-2K-Cxk" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="7DP-aS-uVg">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="y7b-e7-ziQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="y7b-e7-ziQ" secondAttribute="bottom" id="7o9-gj-3pc"/>
+                                            <constraint firstItem="y7b-e7-ziQ" firstAttribute="top" secondItem="fAn-2K-Cxk" secondAttribute="top" id="S1Q-NM-j8M"/>
+                                            <constraint firstItem="y7b-e7-ziQ" firstAttribute="leading" secondItem="fAn-2K-Cxk" secondAttribute="leading" id="rqX-Dt-ACQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="y7b-e7-ziQ" secondAttribute="trailing" id="yaN-Ic-Elf"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kgA-oW-kOx" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deu-Qi-Gpk" userLabel="front">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="6HD-yc-Utk" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yw8-1I-orB" userLabel="front">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0c-xP-UlK">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqU-Tu-J6D">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="sqU-Tu-J6D" firstAttribute="leading" secondItem="deu-Qi-Gpk" secondAttribute="leading" id="7Cp-AF-vdk"/>
+                                            <constraint firstAttribute="trailing" secondItem="sqU-Tu-J6D" secondAttribute="trailing" id="Twt-J3-zVc"/>
+                                            <constraint firstAttribute="bottom" secondItem="Yw8-1I-orB" secondAttribute="bottom" id="cXc-bi-FUS"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yw8-1I-orB" secondAttribute="trailing" id="f7D-xJ-5Qo"/>
+                                            <constraint firstItem="sqU-Tu-J6D" firstAttribute="top" secondItem="deu-Qi-Gpk" secondAttribute="top" id="fDx-cw-Rhz"/>
+                                            <constraint firstItem="Yw8-1I-orB" firstAttribute="leading" secondItem="deu-Qi-Gpk" secondAttribute="leading" id="hCG-fQ-lVD"/>
+                                            <constraint firstAttribute="bottom" secondItem="sqU-Tu-J6D" secondAttribute="bottom" id="mDo-ni-Dx2"/>
+                                            <constraint firstItem="Yw8-1I-orB" firstAttribute="top" secondItem="deu-Qi-Gpk" secondAttribute="top" id="svo-Ry-uWx"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="fAn-2K-Cxk" firstAttribute="top" secondItem="pHf-UL-4ky" secondAttribute="top" id="A6c-Qt-BOk"/>
+                                    <constraint firstAttribute="trailing" secondItem="fAn-2K-Cxk" secondAttribute="trailing" id="I6L-Qg-HS9"/>
+                                    <constraint firstItem="fAn-2K-Cxk" firstAttribute="leading" secondItem="pHf-UL-4ky" secondAttribute="leading" id="LkY-A2-sRL"/>
+                                    <constraint firstItem="deu-Qi-Gpk" firstAttribute="top" secondItem="pHf-UL-4ky" secondAttribute="top" id="Qh6-gz-XsE"/>
+                                    <constraint firstItem="deu-Qi-Gpk" firstAttribute="leading" secondItem="pHf-UL-4ky" secondAttribute="leading" id="Rh9-d6-hiX"/>
+                                    <constraint firstAttribute="bottom" secondItem="deu-Qi-Gpk" secondAttribute="bottom" id="Uve-bI-g84"/>
+                                    <constraint firstAttribute="trailing" secondItem="deu-Qi-Gpk" secondAttribute="trailing" id="f4j-lW-OsI"/>
+                                    <constraint firstAttribute="bottom" secondItem="fAn-2K-Cxk" secondAttribute="bottom" id="oqR-ap-JXA"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lOU-ce-85A" userLabel="card_10">
-                                <rect key="frame" x="-158" y="316" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siS-lE-rMM" userLabel="card_9">
+                                <rect key="frame" x="74" y="620.5" width="150" height="150.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCN-t4-Rb6" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnH-tb-NGP" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="gaI-KX-e6a">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="jGO-pD-XVH">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="jGO-pD-XVH" secondAttribute="trailing" id="Ax9-m8-LtJ"/>
+                                            <constraint firstItem="jGO-pD-XVH" firstAttribute="top" secondItem="xnH-tb-NGP" secondAttribute="top" id="bYy-9y-Jia"/>
+                                            <constraint firstItem="jGO-pD-XVH" firstAttribute="leading" secondItem="xnH-tb-NGP" secondAttribute="leading" id="o3y-uk-EKj"/>
+                                            <constraint firstAttribute="bottom" secondItem="jGO-pD-XVH" secondAttribute="bottom" id="qVY-Ex-j3R"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i4e-Dr-rZz" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90I-HB-9Xc" userLabel="front">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="UDL-Ns-25m" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="hdI-qu-IPB" userLabel="front">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyJ-fp-zat">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-5j-rUZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hdI-qu-IPB" secondAttribute="trailing" id="81g-eS-QPg"/>
+                                            <constraint firstAttribute="bottom" secondItem="hdI-qu-IPB" secondAttribute="bottom" id="GBC-e2-ZgK"/>
+                                            <constraint firstAttribute="bottom" secondItem="8cc-5j-rUZ" secondAttribute="bottom" id="M89-X0-jsq"/>
+                                            <constraint firstItem="8cc-5j-rUZ" firstAttribute="top" secondItem="90I-HB-9Xc" secondAttribute="top" id="WPb-g1-Ng9"/>
+                                            <constraint firstItem="hdI-qu-IPB" firstAttribute="leading" secondItem="90I-HB-9Xc" secondAttribute="leading" id="adG-dw-Jv2"/>
+                                            <constraint firstItem="hdI-qu-IPB" firstAttribute="top" secondItem="90I-HB-9Xc" secondAttribute="top" id="hkG-N6-P7u"/>
+                                            <constraint firstAttribute="trailing" secondItem="8cc-5j-rUZ" secondAttribute="trailing" id="ogJ-p6-Pj0"/>
+                                            <constraint firstItem="8cc-5j-rUZ" firstAttribute="leading" secondItem="90I-HB-9Xc" secondAttribute="leading" id="scS-aA-yhM"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="7lc-jC-PJd"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xnH-tb-NGP" secondAttribute="trailing" id="9ST-Oq-vP1"/>
+                                    <constraint firstItem="xnH-tb-NGP" firstAttribute="leading" secondItem="siS-lE-rMM" secondAttribute="leading" id="EbF-ux-kvT"/>
+                                    <constraint firstAttribute="bottom" secondItem="90I-HB-9Xc" secondAttribute="bottom" id="Hso-Qz-pGu"/>
+                                    <constraint firstItem="90I-HB-9Xc" firstAttribute="top" secondItem="siS-lE-rMM" secondAttribute="top" id="KLo-Qq-feu"/>
+                                    <constraint firstAttribute="bottom" secondItem="xnH-tb-NGP" secondAttribute="bottom" id="Nvb-Ce-sUN"/>
+                                    <constraint firstItem="xnH-tb-NGP" firstAttribute="top" secondItem="siS-lE-rMM" secondAttribute="top" id="XLr-SU-ELA"/>
+                                    <constraint firstAttribute="trailing" secondItem="90I-HB-9Xc" secondAttribute="trailing" id="nRw-WL-zcO"/>
+                                    <constraint firstItem="90I-HB-9Xc" firstAttribute="leading" secondItem="siS-lE-rMM" secondAttribute="leading" id="vJ0-Dp-mc6"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v1t-YY-27Y" userLabel="card_11">
-                                <rect key="frame" x="-316" y="316" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdh-qD-zFm" userLabel="card_10">
+                                <rect key="frame" x="232" y="620.5" width="150" height="150.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XtK-zs-Dzu" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDL-nM-v5G" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="4bn-Ig-nfl">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="2gX-iy-dRi">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2gX-iy-dRi" firstAttribute="leading" secondItem="mDL-nM-v5G" secondAttribute="leading" id="10H-hE-h8I"/>
+                                            <constraint firstAttribute="bottom" secondItem="2gX-iy-dRi" secondAttribute="bottom" id="3Ad-Mr-i8b"/>
+                                            <constraint firstAttribute="trailing" secondItem="2gX-iy-dRi" secondAttribute="trailing" id="YLz-Gq-sa2"/>
+                                            <constraint firstItem="2gX-iy-dRi" firstAttribute="top" secondItem="mDL-nM-v5G" secondAttribute="top" id="yEb-pN-9Cg"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="exh-iT-252" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Y1-lc-yg9" userLabel="front">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nb0-kA-hK1" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="ipd-Na-6hi" userLabel="front">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ec4-j9-LHF">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8G-f7-P4d">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="ipd-Na-6hi" firstAttribute="leading" secondItem="4Y1-lc-yg9" secondAttribute="leading" id="0hB-gR-xiV"/>
+                                            <constraint firstAttribute="bottom" secondItem="ipd-Na-6hi" secondAttribute="bottom" id="1lX-NF-WI9"/>
+                                            <constraint firstItem="t8G-f7-P4d" firstAttribute="top" secondItem="4Y1-lc-yg9" secondAttribute="top" id="5LL-SO-BHg"/>
+                                            <constraint firstItem="ipd-Na-6hi" firstAttribute="top" secondItem="4Y1-lc-yg9" secondAttribute="top" id="aI5-Oo-CkN"/>
+                                            <constraint firstItem="t8G-f7-P4d" firstAttribute="leading" secondItem="4Y1-lc-yg9" secondAttribute="leading" id="bOP-o6-XT6"/>
+                                            <constraint firstAttribute="bottom" secondItem="t8G-f7-P4d" secondAttribute="bottom" id="i8R-4I-Mf5"/>
+                                            <constraint firstAttribute="trailing" secondItem="ipd-Na-6hi" secondAttribute="trailing" id="jsh-Vb-Vvo"/>
+                                            <constraint firstAttribute="trailing" secondItem="t8G-f7-P4d" secondAttribute="trailing" id="mjY-ra-dcD"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="jOe-17-DK6"/>
+                                <constraints>
+                                    <constraint firstItem="mDL-nM-v5G" firstAttribute="top" secondItem="Pdh-qD-zFm" secondAttribute="top" id="02f-UB-qL0"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Y1-lc-yg9" secondAttribute="trailing" id="94d-cK-GMh"/>
+                                    <constraint firstItem="4Y1-lc-yg9" firstAttribute="leading" secondItem="Pdh-qD-zFm" secondAttribute="leading" id="aS0-lM-OBP"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Y1-lc-yg9" secondAttribute="bottom" id="eYx-oe-XEA"/>
+                                    <constraint firstAttribute="bottom" secondItem="mDL-nM-v5G" secondAttribute="bottom" id="kLk-EU-ERW"/>
+                                    <constraint firstAttribute="trailing" secondItem="mDL-nM-v5G" secondAttribute="trailing" id="n4i-p5-KOc"/>
+                                    <constraint firstItem="4Y1-lc-yg9" firstAttribute="top" secondItem="Pdh-qD-zFm" secondAttribute="top" id="o7T-5f-cQK"/>
+                                    <constraint firstItem="mDL-nM-v5G" firstAttribute="leading" secondItem="Pdh-qD-zFm" secondAttribute="leading" id="qfB-zJ-oOe"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yZt-Rq-Aym" userLabel="card_12">
-                                <rect key="frame" x="-474" y="316" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMd-3e-dgs" userLabel="card_11">
+                                <rect key="frame" x="390" y="620.5" width="150.5" height="150.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OkB-j0-10t" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggW-gs-26c" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="LJy-9g-uX8">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="wzf-I4-fmt">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="150.5"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="wzf-I4-fmt" secondAttribute="trailing" id="G6u-Fq-mkv"/>
+                                            <constraint firstItem="wzf-I4-fmt" firstAttribute="leading" secondItem="ggW-gs-26c" secondAttribute="leading" id="IuK-P5-3u5"/>
+                                            <constraint firstItem="wzf-I4-fmt" firstAttribute="top" secondItem="ggW-gs-26c" secondAttribute="top" id="PLe-Gm-cfk"/>
+                                            <constraint firstAttribute="bottom" secondItem="wzf-I4-fmt" secondAttribute="bottom" id="aiW-hh-t5O"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xq3-ta-W3w" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxm-HT-atb" userLabel="front">
+                                        <rect key="frame" x="0.0" y="0.0" width="150.5" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-cf-JC7" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="NOk-Mw-mTR" userLabel="front">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="150.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0V-mT-OKR">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jef-11-ZqT">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="150.5"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="jef-11-ZqT" secondAttribute="bottom" id="HPO-0G-WFL"/>
+                                            <constraint firstItem="NOk-Mw-mTR" firstAttribute="top" secondItem="hxm-HT-atb" secondAttribute="top" id="IIe-bU-CXc"/>
+                                            <constraint firstItem="jef-11-ZqT" firstAttribute="top" secondItem="hxm-HT-atb" secondAttribute="top" id="Voo-AM-71O"/>
+                                            <constraint firstAttribute="trailing" secondItem="NOk-Mw-mTR" secondAttribute="trailing" id="bOp-iv-Ab2"/>
+                                            <constraint firstAttribute="bottom" secondItem="NOk-Mw-mTR" secondAttribute="bottom" id="lAZ-Y4-N6A"/>
+                                            <constraint firstItem="jef-11-ZqT" firstAttribute="leading" secondItem="hxm-HT-atb" secondAttribute="leading" id="rta-zD-7cK"/>
+                                            <constraint firstItem="NOk-Mw-mTR" firstAttribute="leading" secondItem="hxm-HT-atb" secondAttribute="leading" id="vfK-RZ-khF"/>
+                                            <constraint firstAttribute="trailing" secondItem="jef-11-ZqT" secondAttribute="trailing" id="yvh-BP-bCf"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <viewLayoutGuide key="safeArea" id="7pS-yU-10O"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hxm-HT-atb" secondAttribute="trailing" id="3JC-qF-jxa"/>
+                                    <constraint firstItem="ggW-gs-26c" firstAttribute="top" secondItem="lMd-3e-dgs" secondAttribute="top" id="H5R-PX-35D"/>
+                                    <constraint firstItem="hxm-HT-atb" firstAttribute="leading" secondItem="lMd-3e-dgs" secondAttribute="leading" id="LfJ-gY-hNI"/>
+                                    <constraint firstAttribute="bottom" secondItem="ggW-gs-26c" secondAttribute="bottom" id="Lpd-wl-Ttz"/>
+                                    <constraint firstItem="ggW-gs-26c" firstAttribute="leading" secondItem="lMd-3e-dgs" secondAttribute="leading" id="Q9L-3H-3CC"/>
+                                    <constraint firstAttribute="bottom" secondItem="hxm-HT-atb" secondAttribute="bottom" id="Zw3-uW-vQG"/>
+                                    <constraint firstItem="hxm-HT-atb" firstAttribute="top" secondItem="lMd-3e-dgs" secondAttribute="top" id="bD6-wj-u9L"/>
+                                    <constraint firstAttribute="trailing" secondItem="ggW-gs-26c" secondAttribute="trailing" id="bS5-Cy-Zll"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tco-JW-4MK" userLabel="card_1">
-                                <rect key="frame" x="309" y="437" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xA-W2-81T" userLabel="card_12">
+                                <rect key="frame" x="548.5" y="620.5" width="150" height="150.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aZM-4I-fDO" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-nA-cK4" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="nFt-Fd-z1F">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-fE-teq">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="xkh-fE-teq" secondAttribute="bottom" id="SW4-Of-p8Y"/>
+                                            <constraint firstAttribute="trailing" secondItem="xkh-fE-teq" secondAttribute="trailing" id="YeS-2Z-Kgl"/>
+                                            <constraint firstItem="xkh-fE-teq" firstAttribute="leading" secondItem="hf6-nA-cK4" secondAttribute="leading" id="jCh-2g-JQf"/>
+                                            <constraint firstItem="xkh-fE-teq" firstAttribute="top" secondItem="hf6-nA-cK4" secondAttribute="top" id="rdp-Fg-Nd2"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PhU-BD-zfm" userLabel="front">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrV-Yw-UfT" userLabel="front">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="5vT-1Z-71i" userLabel="front">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="front_card.png" translatesAutoresizingMaskIntoConstraints="NO" id="37e-Vx-DRJ" userLabel="front">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOl-T7-gBV">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4W-kl-Peu">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150.5"/>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="37e-Vx-DRJ" secondAttribute="bottom" id="6XM-u2-p01"/>
+                                            <constraint firstAttribute="trailing" secondItem="L4W-kl-Peu" secondAttribute="trailing" id="GE1-8u-RTM"/>
+                                            <constraint firstAttribute="bottom" secondItem="L4W-kl-Peu" secondAttribute="bottom" id="Goa-ca-dh0"/>
+                                            <constraint firstItem="37e-Vx-DRJ" firstAttribute="top" secondItem="wrV-Yw-UfT" secondAttribute="top" id="MNY-ql-xLZ"/>
+                                            <constraint firstItem="37e-Vx-DRJ" firstAttribute="leading" secondItem="wrV-Yw-UfT" secondAttribute="leading" id="MrB-cu-jsQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="37e-Vx-DRJ" secondAttribute="trailing" id="cVh-IS-cHp"/>
+                                            <constraint firstItem="L4W-kl-Peu" firstAttribute="leading" secondItem="wrV-Yw-UfT" secondAttribute="leading" id="nCA-uH-1LI"/>
+                                            <constraint firstItem="L4W-kl-Peu" firstAttribute="top" secondItem="wrV-Yw-UfT" secondAttribute="top" id="qLK-DJ-09x"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hf6-nA-cK4" secondAttribute="trailing" id="RjH-U0-fha"/>
+                                    <constraint firstItem="wrV-Yw-UfT" firstAttribute="leading" secondItem="7xA-W2-81T" secondAttribute="leading" id="Va4-CF-hZ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="wrV-Yw-UfT" secondAttribute="trailing" id="iwq-7b-DEH"/>
+                                    <constraint firstItem="hf6-nA-cK4" firstAttribute="leading" secondItem="7xA-W2-81T" secondAttribute="leading" id="nOw-fN-SvR"/>
+                                    <constraint firstAttribute="bottom" secondItem="wrV-Yw-UfT" secondAttribute="bottom" id="pxB-3d-O6W"/>
+                                    <constraint firstAttribute="bottom" secondItem="hf6-nA-cK4" secondAttribute="bottom" id="rhj-eM-k1Z"/>
+                                    <constraint firstItem="hf6-nA-cK4" firstAttribute="top" secondItem="7xA-W2-81T" secondAttribute="top" id="xfi-Us-HGw"/>
+                                    <constraint firstItem="wrV-Yw-UfT" firstAttribute="top" secondItem="7xA-W2-81T" secondAttribute="top" id="zPl-Vd-dSW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdW-A0-t2O" userLabel="reset">
+                                <rect key="frame" x="548" y="110" width="150" height="150"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="refresh_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="eg8-0P-ZRM" userLabel="reset">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQo-TN-dhr">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="zdW-A0-t2O" firstAttribute="leading" secondItem="pHf-UL-4ky" secondAttribute="leading" id="0NK-Dh-ebS"/>
+                            <constraint firstItem="pHf-UL-4ky" firstAttribute="leading" secondItem="arf-IQ-bsc" secondAttribute="trailing" constant="8" id="0ge-E5-UUT"/>
+                            <constraint firstItem="kPl-Zd-4Ow" firstAttribute="height" secondItem="4Kz-3p-CTh" secondAttribute="height" id="1Bb-kB-fNf"/>
+                            <constraint firstItem="Pdh-qD-zFm" firstAttribute="leading" secondItem="siS-lE-rMM" secondAttribute="trailing" constant="8" id="7th-BD-eyO"/>
+                            <constraint firstItem="arf-IQ-bsc" firstAttribute="height" secondItem="Z5x-Xg-6pw" secondAttribute="height" id="8qg-bv-hOE"/>
+                            <constraint firstItem="7xA-W2-81T" firstAttribute="height" secondItem="Pdh-qD-zFm" secondAttribute="height" id="9Np-tG-XGC"/>
+                            <constraint firstItem="lMd-3e-dgs" firstAttribute="top" secondItem="pfc-15-YLZ" secondAttribute="bottom" constant="8" id="BqB-yG-hAg"/>
+                            <constraint firstItem="siS-lE-rMM" firstAttribute="height" secondItem="Pdh-qD-zFm" secondAttribute="height" id="CPi-fX-G0T"/>
+                            <constraint firstItem="4Kz-3p-CTh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.05" id="CeM-TM-9Tg"/>
+                            <constraint firstItem="lMd-3e-dgs" firstAttribute="height" secondItem="Pdh-qD-zFm" secondAttribute="height" id="DA3-a6-swD"/>
+                            <constraint firstItem="7xA-W2-81T" firstAttribute="leading" secondItem="lMd-3e-dgs" secondAttribute="trailing" constant="8" id="DjW-CO-RpQ"/>
+                            <constraint firstItem="arf-IQ-bsc" firstAttribute="top" secondItem="Z5x-Xg-6pw" secondAttribute="top" id="GzU-B7-DjC"/>
+                            <constraint firstItem="Z5x-Xg-6pw" firstAttribute="height" secondItem="4Kz-3p-CTh" secondAttribute="height" id="JS6-39-aUQ"/>
+                            <constraint firstItem="pHf-UL-4ky" firstAttribute="top" secondItem="zdW-A0-t2O" secondAttribute="bottom" constant="44" id="K18-Nw-uKz"/>
+                            <constraint firstItem="kPl-Zd-4Ow" firstAttribute="leading" secondItem="pfc-15-YLZ" secondAttribute="trailing" constant="8" id="KtP-X1-JBD"/>
+                            <constraint firstItem="zdW-A0-t2O" firstAttribute="height" secondItem="pHf-UL-4ky" secondAttribute="height" id="L0w-9B-MDr"/>
+                            <constraint firstItem="pHf-UL-4ky" firstAttribute="width" secondItem="Z5x-Xg-6pw" secondAttribute="width" id="NJY-IP-Sjy"/>
+                            <constraint firstItem="4Kz-3p-CTh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.1953" id="Ohq-pA-mTv"/>
+                            <constraint firstItem="ghP-q2-XUq" firstAttribute="height" secondItem="4Kz-3p-CTh" secondAttribute="height" id="RRq-2s-9RS"/>
+                            <constraint firstItem="zdW-A0-t2O" firstAttribute="width" secondItem="pHf-UL-4ky" secondAttribute="width" id="S5Z-zx-iSM"/>
+                            <constraint firstItem="ghP-q2-XUq" firstAttribute="top" secondItem="4Kz-3p-CTh" secondAttribute="top" id="UhS-R2-5uG"/>
+                            <constraint firstItem="lMd-3e-dgs" firstAttribute="top" secondItem="Pdh-qD-zFm" secondAttribute="top" id="VJb-fW-kex"/>
+                            <constraint firstItem="pHf-UL-4ky" firstAttribute="height" secondItem="Z5x-Xg-6pw" secondAttribute="height" id="VKo-K7-1nn"/>
+                            <constraint firstItem="pfc-15-YLZ" firstAttribute="height" secondItem="4Kz-3p-CTh" secondAttribute="height" id="Vu0-XK-Wk6"/>
+                            <constraint firstItem="arf-IQ-bsc" firstAttribute="leading" secondItem="Z5x-Xg-6pw" secondAttribute="trailing" constant="8" id="dbC-3e-fOP"/>
+                            <constraint firstItem="kPl-Zd-4Ow" firstAttribute="top" secondItem="4Kz-3p-CTh" secondAttribute="top" id="e2d-vg-Dn1"/>
+                            <constraint firstItem="siS-lE-rMM" firstAttribute="top" secondItem="Pdh-qD-zFm" secondAttribute="top" id="e5j-fv-hb7"/>
+                            <constraint firstItem="lMd-3e-dgs" firstAttribute="width" secondItem="Pdh-qD-zFm" secondAttribute="width" id="eU5-kT-yre"/>
+                            <constraint firstItem="Pdh-qD-zFm" firstAttribute="width" secondItem="4Kz-3p-CTh" secondAttribute="width" id="eUf-8p-HMZ"/>
+                            <constraint firstItem="7xA-W2-81T" firstAttribute="width" secondItem="Pdh-qD-zFm" secondAttribute="width" id="fUt-m3-9F6"/>
+                            <constraint firstItem="ghP-q2-XUq" firstAttribute="top" secondItem="Ogg-Cl-kF1" secondAttribute="bottom" constant="8" id="fz5-T1-0EB"/>
+                            <constraint firstItem="pHf-UL-4ky" firstAttribute="top" secondItem="Z5x-Xg-6pw" secondAttribute="top" id="gQS-g5-O7G"/>
+                            <constraint firstItem="lMd-3e-dgs" firstAttribute="leading" secondItem="Pdh-qD-zFm" secondAttribute="trailing" constant="8" id="h7F-5J-M0P"/>
+                            <constraint firstItem="Z5x-Xg-6pw" firstAttribute="leading" secondItem="Ogg-Cl-kF1" secondAttribute="trailing" constant="8" id="hDf-e1-Bn4"/>
+                            <constraint firstItem="arf-IQ-bsc" firstAttribute="width" secondItem="Z5x-Xg-6pw" secondAttribute="width" id="hiJ-Ef-tbl"/>
+                            <constraint firstItem="siS-lE-rMM" firstAttribute="width" secondItem="Pdh-qD-zFm" secondAttribute="width" id="hoZ-ke-Rhk"/>
+                            <constraint firstItem="Z5x-Xg-6pw" firstAttribute="width" secondItem="4Kz-3p-CTh" secondAttribute="width" id="hth-v7-vO8"/>
+                            <constraint firstItem="7xA-W2-81T" firstAttribute="top" secondItem="Pdh-qD-zFm" secondAttribute="top" id="ira-e7-aDJ"/>
+                            <constraint firstItem="pfc-15-YLZ" firstAttribute="top" secondItem="arf-IQ-bsc" secondAttribute="bottom" constant="8" id="kLZ-hw-3wd"/>
+                            <constraint firstItem="pfc-15-YLZ" firstAttribute="leading" secondItem="4Kz-3p-CTh" secondAttribute="trailing" constant="8" id="n3Z-eD-RSn"/>
+                            <constraint firstItem="Pdh-qD-zFm" firstAttribute="leading" secondItem="4Kz-3p-CTh" secondAttribute="leading" id="p6a-9V-gnU"/>
+                            <constraint firstItem="kPl-Zd-4Ow" firstAttribute="top" secondItem="pHf-UL-4ky" secondAttribute="bottom" constant="8" id="qKg-oY-EYU"/>
+                            <constraint firstItem="Z5x-Xg-6pw" firstAttribute="leading" secondItem="4Kz-3p-CTh" secondAttribute="leading" id="qjf-HX-Whz"/>
+                            <constraint firstItem="kPl-Zd-4Ow" firstAttribute="width" secondItem="4Kz-3p-CTh" secondAttribute="width" id="r8a-3N-1bT"/>
+                            <constraint firstItem="7xA-W2-81T" firstAttribute="top" secondItem="kPl-Zd-4Ow" secondAttribute="bottom" constant="8" id="rFq-2p-Sgl"/>
+                            <constraint firstItem="Pdh-qD-zFm" firstAttribute="height" secondItem="4Kz-3p-CTh" secondAttribute="height" id="rHn-gq-jZ4"/>
+                            <constraint firstItem="ghP-q2-XUq" firstAttribute="width" secondItem="4Kz-3p-CTh" secondAttribute="width" id="sFE-fy-2iP"/>
+                            <constraint firstItem="kPl-Zd-4Ow" firstAttribute="leading" secondItem="pfc-15-YLZ" secondAttribute="trailing" constant="8" id="t3O-iZ-ZLl"/>
+                            <constraint firstItem="Ogg-Cl-kF1" firstAttribute="width" secondItem="Z5x-Xg-6pw" secondAttribute="width" id="tDd-NF-2gD"/>
+                            <constraint firstItem="pfc-15-YLZ" firstAttribute="top" secondItem="4Kz-3p-CTh" secondAttribute="top" id="w49-Oh-CS4"/>
+                            <constraint firstItem="Ogg-Cl-kF1" firstAttribute="height" secondItem="Z5x-Xg-6pw" secondAttribute="height" id="wwo-OL-ggo"/>
+                            <constraint firstItem="4Kz-3p-CTh" firstAttribute="top" secondItem="Z5x-Xg-6pw" secondAttribute="bottom" constant="8" id="x4Y-Jx-PHm"/>
+                            <constraint firstItem="4Kz-3p-CTh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.8" id="xO1-mc-M2n"/>
+                            <constraint firstItem="Ogg-Cl-kF1" firstAttribute="top" secondItem="Z5x-Xg-6pw" secondAttribute="top" id="yBS-nS-C5c"/>
+                            <constraint firstItem="siS-lE-rMM" firstAttribute="top" secondItem="ghP-q2-XUq" secondAttribute="bottom" constant="8" id="yW7-7R-G9q"/>
+                            <constraint firstItem="4Kz-3p-CTh" firstAttribute="leading" secondItem="ghP-q2-XUq" secondAttribute="trailing" constant="8" id="yXz-ky-zl6"/>
+                            <constraint firstItem="Pdh-qD-zFm" firstAttribute="top" secondItem="4Kz-3p-CTh" secondAttribute="bottom" constant="8" id="ycX-14-1lS"/>
+                            <constraint firstItem="pfc-15-YLZ" firstAttribute="width" secondItem="4Kz-3p-CTh" secondAttribute="width" id="z3B-fX-Ya1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -400,8 +714,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background_view.png" width="1536" height="2048"/>
         <image name="cat.png" width="300" height="300"/>
         <image name="front_card.png" width="300" height="300"/>
+        <image name="refresh_button.png" width="300" height="300"/>
     </resources>
 </document>
