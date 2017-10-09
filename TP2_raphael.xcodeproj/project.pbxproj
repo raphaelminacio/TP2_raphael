@@ -20,10 +20,8 @@
 		281128361F8AAABA000EFBA3 /* background_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811282A1F8AAABA000EFBA3 /* background_view.png */; };
 		281128371F8AAABA000EFBA3 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811282B1F8AAABA000EFBA3 /* cat.png */; };
 		281128381F8AAABA000EFBA3 /* cow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811282C1F8AAABA000EFBA3 /* cow.png */; };
-		281128391F8AAABA000EFBA3 /* appicon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 2811282D1F8AAABA000EFBA3 /* appicon.psd */; };
 		2811283A1F8AAABA000EFBA3 /* launch_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811282E1F8AAABA000EFBA3 /* launch_screen.png */; };
 		2811283B1F8AAABA000EFBA3 /* front_card.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811282F1F8AAABA000EFBA3 /* front_card.png */; };
-		2811283C1F8AAABA000EFBA3 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 281128301F8AAABA000EFBA3 /* appicon.png */; };
 		2811283D1F8AAABA000EFBA3 /* chick.png in Resources */ = {isa = PBXBuildFile; fileRef = 281128311F8AAABA000EFBA3 /* chick.png */; };
 		2811283E1F8AAABA000EFBA3 /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = 281128321F8AAABA000EFBA3 /* pig.png */; };
 /* End PBXBuildFile section */
@@ -65,10 +63,8 @@
 		2811282A1F8AAABA000EFBA3 /* background_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background_view.png; path = working/background_view.png; sourceTree = SOURCE_ROOT; };
 		2811282B1F8AAABA000EFBA3 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cat.png; path = working/cat.png; sourceTree = SOURCE_ROOT; };
 		2811282C1F8AAABA000EFBA3 /* cow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cow.png; path = working/cow.png; sourceTree = SOURCE_ROOT; };
-		2811282D1F8AAABA000EFBA3 /* appicon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = appicon.psd; path = working/appicon.psd; sourceTree = SOURCE_ROOT; };
 		2811282E1F8AAABA000EFBA3 /* launch_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch_screen.png; path = working/launch_screen.png; sourceTree = SOURCE_ROOT; };
 		2811282F1F8AAABA000EFBA3 /* front_card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = front_card.png; path = working/front_card.png; sourceTree = SOURCE_ROOT; };
-		281128301F8AAABA000EFBA3 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appicon.png; path = working/appicon.png; sourceTree = SOURCE_ROOT; };
 		281128311F8AAABA000EFBA3 /* chick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chick.png; path = working/chick.png; sourceTree = SOURCE_ROOT; };
 		281128321F8AAABA000EFBA3 /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pig.png; path = working/pig.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -153,8 +149,6 @@
 		281128261F8AAA5F000EFBA3 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				281128301F8AAABA000EFBA3 /* appicon.png */,
-				2811282D1F8AAABA000EFBA3 /* appicon.psd */,
 				2811282A1F8AAABA000EFBA3 /* background_view.png */,
 				2811282B1F8AAABA000EFBA3 /* cat.png */,
 				281128311F8AAABA000EFBA3 /* chick.png */,
@@ -278,7 +272,6 @@
 			files = (
 				2811283E1F8AAABA000EFBA3 /* pig.png in Resources */,
 				281128361F8AAABA000EFBA3 /* background_view.png in Resources */,
-				2811283C1F8AAABA000EFBA3 /* appicon.png in Resources */,
 				281128031F8AA9AA000EFBA3 /* LaunchScreen.storyboard in Resources */,
 				281128371F8AAABA000EFBA3 /* cat.png in Resources */,
 				281128381F8AAABA000EFBA3 /* cow.png in Resources */,
@@ -289,7 +282,6 @@
 				2811283B1F8AAABA000EFBA3 /* front_card.png in Resources */,
 				2811283A1F8AAABA000EFBA3 /* launch_screen.png in Resources */,
 				281128001F8AA9AA000EFBA3 /* Assets.xcassets in Resources */,
-				281128391F8AAABA000EFBA3 /* appicon.psd in Resources */,
 				281127FE1F8AA9AA000EFBA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
