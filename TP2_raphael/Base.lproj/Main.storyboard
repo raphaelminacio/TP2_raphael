@@ -27,7 +27,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wff-o4-FCK" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="zuJ-or-9YJ">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="zuJ-or-9YJ" userLabel="cat">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -81,7 +81,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3e-FD-0CA" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="149.5" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="vT0-fT-OjU">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="vT0-fT-OjU" userLabel="cat">
                                                 <rect key="frame" x="0.0" y="0.0" width="149.5" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -134,7 +134,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hJ-iq-baf" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="yj9-fj-hfS">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chick.png" translatesAutoresizingMaskIntoConstraints="NO" id="yj9-fj-hfS" userLabel="chick">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -187,7 +187,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIK-q7-XR6" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="olx-dG-RDk">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chick.png" translatesAutoresizingMaskIntoConstraints="NO" id="olx-dG-RDk" userLabel="chick">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -240,7 +240,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3kz-Ma-7PF" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="149.5" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-rB-dD1">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cow.png" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-rB-dD1" userLabel="cow">
                                                 <rect key="frame" x="0.0" y="0.0" width="149.5" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -293,7 +293,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbm-kd-pQa" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="FDS-FN-UZk">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cow.png" translatesAutoresizingMaskIntoConstraints="NO" id="FDS-FN-UZk" userLabel="cow">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -346,7 +346,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sv5-JM-pLu" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="E6K-6j-PCT">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog.png" translatesAutoresizingMaskIntoConstraints="NO" id="E6K-6j-PCT" userLabel="dog">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -399,7 +399,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAn-2K-Cxk" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="y7b-e7-ziQ">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog.png" translatesAutoresizingMaskIntoConstraints="NO" id="y7b-e7-ziQ" userLabel="dog">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -452,7 +452,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnH-tb-NGP" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="149.5" height="149.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="jGO-pD-XVH">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pig.png" translatesAutoresizingMaskIntoConstraints="NO" id="jGO-pD-XVH" userLabel="pig">
                                                 <rect key="frame" x="0.0" y="0.0" width="149.5" height="149.5"/>
                                             </imageView>
                                         </subviews>
@@ -505,7 +505,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDL-nM-v5G" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="149.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="2gX-iy-dRi">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pig.png" translatesAutoresizingMaskIntoConstraints="NO" id="2gX-iy-dRi" userLabel="pig">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="149.5"/>
                                             </imageView>
                                         </subviews>
@@ -558,7 +558,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggW-gs-26c" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="149.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="wzf-I4-fmt">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheep.png" translatesAutoresizingMaskIntoConstraints="NO" id="wzf-I4-fmt" userLabel="sheep">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="149.5"/>
                                             </imageView>
                                         </subviews>
@@ -611,7 +611,7 @@
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-nA-cK4" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="149.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.png" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-fE-teq">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheep.png" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-fE-teq" userLabel="sheep">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="149.5"/>
                                             </imageView>
                                         </subviews>
@@ -771,6 +771,18 @@
                         <outlet property="front_7" destination="D9O-1b-fs9" id="ID3-5L-wi9"/>
                         <outlet property="front_8" destination="deu-Qi-Gpk" id="xbc-Z1-ndP"/>
                         <outlet property="front_9" destination="90I-HB-9Xc" id="SRb-FF-G6q"/>
+                        <outlet property="imgView1" destination="zuJ-or-9YJ" id="gSp-4r-kho"/>
+                        <outlet property="imgView10" destination="2gX-iy-dRi" id="nDd-cU-Ne1"/>
+                        <outlet property="imgView11" destination="wzf-I4-fmt" id="Efr-mM-Zxa"/>
+                        <outlet property="imgView12" destination="xkh-fE-teq" id="Jm2-dD-rqY"/>
+                        <outlet property="imgView2" destination="vT0-fT-OjU" id="ZXZ-s2-TUm"/>
+                        <outlet property="imgView3" destination="yj9-fj-hfS" id="n0p-H3-E78"/>
+                        <outlet property="imgView4" destination="olx-dG-RDk" id="eVZ-hV-oti"/>
+                        <outlet property="imgView5" destination="MUp-rB-dD1" id="BJR-3s-oAI"/>
+                        <outlet property="imgView6" destination="FDS-FN-UZk" id="1Aa-mY-sCe"/>
+                        <outlet property="imgView7" destination="E6K-6j-PCT" id="xXf-tZ-CjL"/>
+                        <outlet property="imgView8" destination="y7b-e7-ziQ" id="pxL-g9-yPK"/>
+                        <outlet property="imgView9" destination="jGO-pD-XVH" id="tIB-Ah-PGq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -780,7 +792,12 @@
     <resources>
         <image name="background_view.png" width="1536" height="2048"/>
         <image name="cat.png" width="300" height="300"/>
+        <image name="chick.png" width="300" height="300"/>
+        <image name="cow.png" width="300" height="300"/>
+        <image name="dog.png" width="300" height="300"/>
         <image name="front_card.png" width="300" height="300"/>
+        <image name="pig.png" width="300" height="300"/>
         <image name="refresh_button.png" width="300" height="300"/>
+        <image name="sheep.png" width="300" height="300"/>
     </resources>
 </document>

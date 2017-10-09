@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var front_12: UIView!
 
     /* Ici sont les connexions avec les images juste du "back" qui seront appéllés par la function "setImagesToCards"*/
+
     @IBOutlet weak var imgView1: UIImageView!
     @IBOutlet weak var imgView2: UIImageView!
     @IBOutlet weak var imgView3: UIImageView!
@@ -42,14 +43,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgView10: UIImageView!
     @IBOutlet weak var imgView11: UIImageView!
     @IBOutlet weak var imgView12: UIImageView!
-    @IBOutlet weak var imgView13: UIImageView!
-    @IBOutlet weak var imgView14: UIImageView!
-    @IBOutlet weak var imgView15: UIImageView!
-    @IBOutlet weak var imgView16: UIImageView!
-    @IBOutlet weak var imgView17: UIImageView!
-    @IBOutlet weak var imgView18: UIImageView!
-    @IBOutlet weak var imgView19: UIImageView!
-    @IBOutlet weak var imgView20: UIImageView!
     
     /* Ici sont les connexions avec les chaque carte au complet */
     @IBOutlet weak var card_1: UIView!
@@ -64,21 +57,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var card_10: UIView!
     @IBOutlet weak var card_11: UIView!
     @IBOutlet weak var card_12: UIView!
-    @IBOutlet weak var card_13: UIView!
-    @IBOutlet weak var card_14: UIView!
-    @IBOutlet weak var card_15: UIView!
-    @IBOutlet weak var card_16: UIView!
-    @IBOutlet weak var card_17: UIView!
-    @IBOutlet weak var card_18: UIView!
-    @IBOutlet weak var card_19: UIView!
-    @IBOutlet weak var card_20: UIView!
-    
-    
+
     /* Tableau de imageView optionnelle */
     var arrayOfImageViews: [UIImageView]!
     
     /* Tableau de String que sera utilisé par la function "setImagesToCards"pour faire une boucle */
-    var arrayOfAnimalNames = ["cat.png","cat.png", "chick.png", "chick.png",  "cock.png", "cock.png", "cow.png","cow.png", "dog.png", "dog.png", "elephant.png", "elephant.png", "pig.png", "pig.png", "rabit.png", "rabit.png", "sheep.png", "sheep.png", "zebra.png", "zebra.png"]
+    var arrayOfAnimalNames = ["cat.png","cat.png", "chick.png", "chick.png", "cow.png","cow.png", "dog.png", "dog.png", "pig.png", "pig.png", "sheep.png", "sheep.png"]
     
     /* Tableau vide que va recevoir, au hasard, les noms des animaux */
     var arrayOfRandomAnimalNames = [String]()
@@ -100,8 +84,8 @@ class ViewController: UIViewController {
     /* "Lorsque le document est prêt" il va exécuter tout ce qu'il y a dedans */
     override func viewDidLoad() {
         super.viewDidLoad()
-        cards = [card_1, card_2, card_3, card_4, card_5, card_6, card_7, card_8, card_9, card_10, card_11, card_12, card_13, card_14, card_15, card_16, card_17, card_18, card_19, card_20]
-        arrayOfImageViews = [imgView1, imgView2, imgView3, imgView4, imgView5, imgView6, imgView7, imgView8, imgView9, imgView10, imgView11, imgView12, imgView13, imgView14, imgView15, imgView16, imgView17, imgView18, imgView19, imgView20]
+        cards = [card_1, card_2, card_3, card_4, card_5, card_6, card_7, card_8, card_9, card_10, card_11, card_12]
+        arrayOfImageViews = [imgView1, imgView2, imgView3, imgView4, imgView5, imgView6, imgView7, imgView8, imgView9, imgView10, imgView11, imgView12]
         randomAnimals()
         setImagesToCards()
     }
@@ -266,7 +250,7 @@ class ViewController: UIViewController {
         for card in cards {    /* pour faire le reset, ici va montrer les cartes */
             card.isHidden = false
         } /* ici arrayOfAnimalNames va remplir avec les noms */
-        arrayOfAnimalNames = ["cat.png","cat.png", "chick.png", "chick.png",  "cock.png", "cock.png", "cow.png","cow.png", "dog.png", "dog.png", "elephant.png", "elephant.png", "pig.png", "pig.png", "rabit.png", "rabit.png", "sheep.png", "sheep.png", "zebra.png", "zebra.png"]
+        arrayOfAnimalNames = ["cat.png","cat.png", "chick.png", "chick.png", "cow.png","cow.png", "dog.png", "dog.png", "pig.png", "pig.png", "sheep.png", "sheep.png"]
         arrayOfRandomAnimalNames = []  /* après il vidé le tableau random */
         randomAnimals() /* cette méthode va re-remplir arrayOfRandomAnimalNames*/
         setImagesToCards()
