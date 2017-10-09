@@ -666,6 +666,9 @@
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQo-TN-dhr">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <connections>
+                                            <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G0J-bX-llI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -759,6 +762,18 @@
                         <outlet property="back_7" destination="Sv5-JM-pLu" id="R3j-Fb-Azh"/>
                         <outlet property="back_8" destination="fAn-2K-Cxk" id="fhV-nh-S1h"/>
                         <outlet property="back_9" destination="xnH-tb-NGP" id="B7m-vG-qmO"/>
+                        <outlet property="card_1" destination="4Kz-3p-CTh" id="y0W-x4-XJn"/>
+                        <outlet property="card_10" destination="Pdh-qD-zFm" id="xPF-da-Epa"/>
+                        <outlet property="card_11" destination="lMd-3e-dgs" id="v8w-zq-MjP"/>
+                        <outlet property="card_12" destination="7xA-W2-81T" id="D8N-LX-aEX"/>
+                        <outlet property="card_2" destination="ghP-q2-XUq" id="Mey-y6-PKP"/>
+                        <outlet property="card_3" destination="pfc-15-YLZ" id="uyo-VY-0wt"/>
+                        <outlet property="card_4" destination="kPl-Zd-4Ow" id="jqG-JL-oM6"/>
+                        <outlet property="card_5" destination="Ogg-Cl-kF1" id="GxP-AQ-ESS"/>
+                        <outlet property="card_6" destination="Z5x-Xg-6pw" id="oHu-3I-lc6"/>
+                        <outlet property="card_7" destination="arf-IQ-bsc" id="CiB-hX-CQ2"/>
+                        <outlet property="card_8" destination="pHf-UL-4ky" id="jU6-ox-EAj"/>
+                        <outlet property="card_9" destination="siS-lE-rMM" id="nR6-Nb-UxA"/>
                         <outlet property="front_1" destination="l9E-Ln-5Lw" id="6nl-rm-BDa"/>
                         <outlet property="front_10" destination="4Y1-lc-yg9" id="ASe-1d-4C3"/>
                         <outlet property="front_11" destination="hxm-HT-atb" id="V3O-9T-00L"/>
